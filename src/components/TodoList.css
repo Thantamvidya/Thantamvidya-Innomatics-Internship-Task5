@@ -1,0 +1,197 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("https://img.freepik.com/premium-photo/online-learning-design-concept-top-view-student-table-with-tablet-headphone-stationeries-blue-table-background_315337-5800.jpg?w=1380")
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.todo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.todo-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 46vw;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.todo-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-container {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.input-btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.add-btn,
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #34d058;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  gap: 5px;
+}
+
+.add-btn:hover {
+  background-color: #39ff14;
+}
+.del-btn {
+  background-color: #ff4d4d;
+}
+
+button:hover {
+  background-color: #ff0000;
+}
+
+button .del-icon {
+  color: #fff;
+}
+
+.task-container ol {
+  list-style-type: none;
+  padding: 0;
+  height: 39vh;
+  overflow-y: auto;
+}
+.task-container ol:empty {
+  height: 0;
+}
+
+.task-container li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-btn {
+  display: flex;
+  gap: 5px;
+}
+
+.task-btn button {
+  background-color: #87ceeb;
+  color: #333;
+}
+
+.task-btn button:hover {
+  background-color: aquamarine;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* ---Responsive Design--- */
+
+@media (max-width: 1240px) {
+  .task-container ol {
+    height: 20vh;
+  }
+}
+@media (max-width: 1024px) {
+  .todo-container {
+    width: 46vw;
+  }
+  .tagline {
+    font-size: 35px;
+  }
+  .task-container ol {
+    height: 24vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .todo-container {
+    width: 50vw;
+    font-size: 18px;
+  }
+  .tagline {
+    font-size: 30px;
+  }
+  .task-container ol {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 480px) {
+  body{
+    background: url("https://marketplace.canva.com/EAGEbkzSGHo/1/0/900w/canva-blue-and-white-aesthetic-paper-background-instagram-story-KdESO6xoQ8k.jpg") no-repeat center center/cover;
+  }
+ 
+  .todo-container {
+    width: 90vw;
+    font-size: 16px;
+    padding: 15px;
+  }
+  .tagline {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 360px) {
+
+  body{
+    background: url("https://marketplace.canva.com/EAGEbkzSGHo/1/0/900w/canva-blue-and-white-aesthetic-paper-background-instagram-story-KdESO6xoQ8k.jpg") no-repeat center center/cover;
+  }
+ 
+  .todo-container {
+    width: 78vw;
+    font-size: 20px;
+  }
+  .tagline {
+    font-size: 30px;
+  }
+}
+         
